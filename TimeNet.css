@@ -1,0 +1,146 @@
+/* config-font */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+/* config-body */
+body {
+    background-color: #404862;
+}
+
+main {
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* config-header */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-title {
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Staatliches', cursive;
+}
+
+.header-title:hover {
+    cursor: pointer;
+}
+
+/* config-main */
+
+.main-container {
+    width: 55%;
+    height: 85%;
+
+    background-color: #7782A4;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-boxbuttons {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-button {
+    width: 70%;
+    height: 12%;
+
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.9em;
+
+    background-color: #1A1F30;
+    border: none;
+    border-radius: 7px;
+}
+
+.main-button:hover {
+    width: 78%;
+    height: 13%;
+
+    cursor: pointer;
+
+    font-size: 1.1em;
+
+    background-color: #151822;
+}
+
+.main-select {
+    width: 100%;
+    height: 11%;
+
+    outline: none;
+    background-color: #1A1F30;
+    border: none;
+    border-radius: 7px;
+}
+
+.main-boxtime {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-timer {
+    width: 70%;
+    height: 70%;
+
+    background-color: #7782A4;
+    border: 2px solid;
+    border-radius: 100%;
+}
+
+.main-config {
+    width: 3%;
+    
+    position: absolute;
+    top: 75%;
+    left: 73%;
+}
+
+.main-config:hover {
+    width: 3.2%;
+
+    cursor: pointer;
+
+    top: 75%;
+    left: 72.9%;
+}
+
+/* config-responsive */
+
+/* responsive-laptop */
+/* @media (max-width: 1024px) {
+
+} */
+
+/* responsive-tablet */
+/* @media (max-width: 638px) {
+
+} */
+
+/* responsive-mobile G */
+/* @media (max-width: 1024px) {
+
+} */
+
+/* responsive-mobile M */
+/* @media (max-width: 1024px) {
+
+} */

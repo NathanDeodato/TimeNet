@@ -24,7 +24,7 @@ main {
 
 .header-title {
     color: white;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-family: 'Staatliches', cursive;
 }
 
@@ -35,7 +35,7 @@ main {
 /* config-main */
 
 .main-container {
-    width: 55%;
+    width: 50%;
     height: 85%;
 
     background-color: #7782A4;
@@ -47,7 +47,7 @@ main {
 }
 
 .main-boxbuttons {
-    width: 30%;
+    width: 40%;
 
     display: flex;
     flex-direction: column;
@@ -56,12 +56,12 @@ main {
 }
 
 .main-button {
-    width: 70%;
+    width: 62%;
     height: 12%;
 
     color: white;
     font-family: 'Staatliches', cursive;
-    font-size: 0.9em;
+    font-size: 1em;
 
     background-color: #1A1F30;
     border: none;
@@ -69,19 +69,19 @@ main {
 }
 
 .main-button:hover {
-    width: 78%;
+    width: 65%;
     height: 13%;
 
     cursor: pointer;
 
-    font-size: 1.1em;
+    font-size: 1.2em;
 
     background-color: #151822;
 }
 
 .main-select {
-    width: 100%;
-    height: 11%;
+    width: 80%;
+    height: 12%;
 
     outline: none;
     background-color: #1A1F30;
@@ -89,7 +89,7 @@ main {
     border-radius: 7px;
 }
 
-.main-boxtime {
+.main-containertimer {
     width: 50%;
 
     display: flex;
@@ -97,21 +97,80 @@ main {
     align-items: center;
 }
 
-.main-timer {
-    width: 70%;
+.main-boxtimer {
+    width: 80%;
     height: 70%;
 
     background-color: #7782A4;
-    border: 2px solid;
     border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-timercicler {
+    width: 100%;
+    height: 100%;
+    
+    background-color: #1A1F30;
+    border-radius: 100%;
+}
+
+.main-boxbuttonstime {
+    width: 15%;
+}
+
+.main-iconplay {
+    width: 1.6%;
+    height: 3.5%;
+
+    position: absolute;
+    top: 65%;
+    left: 56.6%;
+}
+
+.main-iconplay:hover {
+    top: 64.5%;
+
+    cursor: pointer;
+}
+
+.main-iconpause {
+    width: 1.6%;
+    height: 3.5%;
+
+    position: absolute;
+    top: 65%;
+    left: 60.3%;
+}
+
+.main-iconpause:hover {
+    top: 64.5%;
+    
+    cursor: pointer;
+}
+
+.main-iconreset {
+    width: 1.6%;
+    height: 3.5%;
+
+    position: absolute;
+    top: 65%;
+    left: 64%;
+}
+
+.main-iconreset:hover {
+    top: 64.5%;
+    
+    cursor: pointer;
 }
 
 .main-config {
     width: 3%;
     
     position: absolute;
-    top: 75%;
-    left: 73%;
+    top: 73%;
+    left: 71%;
 }
 
 .main-config:hover {
@@ -119,8 +178,8 @@ main {
 
     cursor: pointer;
 
-    top: 75%;
-    left: 72.9%;
+    top: 73.1%;
+    left: 70.9%;
 }
 
 /* config-responsive */

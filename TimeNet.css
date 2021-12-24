@@ -1,6 +1,7 @@
 /* config-font */
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* config-reset */
 
 /* config-body */
 body {
@@ -24,8 +25,9 @@ main {
 
 .header-title {
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 3.2em;
-    font-family: 'Staatliches', cursive;
+    font-weight: bold;
 }
 
 .header-title:hover {
@@ -35,7 +37,7 @@ main {
 /* config-main */
 
 .main-container {
-    width: 50%;
+    width: 53%;
     height: 85%;
 
     background-color: #7782A4;
@@ -47,7 +49,7 @@ main {
 }
 
 .main-boxbuttons {
-    width: 40%;
+    width: 35%;
 
     display: flex;
     flex-direction: column;
@@ -60,8 +62,9 @@ main {
     height: 12%;
 
     color: white;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1em;
+    font-weight: 600;
 
     background-color: #1A1F30;
     border: none;
@@ -105,69 +108,59 @@ main {
     border-radius: 100%;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .main-timercicler {
     width: 100%;
     height: 100%;
-    
+
     background-color: #1A1F30;
     border-radius: 100%;
 }
 
 .main-boxbuttonstime {
-    width: 15%;
+    width: 12%;
+    height: 8%;
+
+    position: absolute;
+    top: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .main-iconplay {
-    width: 1.6%;
-    height: 3.5%;
-
-    position: absolute;
-    top: 65%;
-    left: 56.6%;
+    width: 12%;
+    height: 40%;
 }
 
 .main-iconplay:hover {
-    top: 64.5%;
-
     cursor: pointer;
 }
 
 .main-iconpause {
-    width: 1.6%;
-    height: 3.5%;
-
-    position: absolute;
-    top: 65%;
-    left: 60.3%;
+    width: 12%;
+    height: 40%;
 }
 
 .main-iconpause:hover {
-    top: 64.5%;
-    
     cursor: pointer;
 }
 
 .main-iconreset {
-    width: 1.6%;
-    height: 3.5%;
-
-    position: absolute;
-    top: 65%;
-    left: 64%;
+    width: 12%;
+    height: 40%;
 }
 
 .main-iconreset:hover {
-    top: 64.5%;
-    
     cursor: pointer;
 }
 
 .main-config {
     width: 3%;
-    
+
     position: absolute;
     top: 73%;
     left: 71%;
@@ -185,21 +178,195 @@ main {
 /* config-responsive */
 
 /* responsive-laptop */
-/* @media (max-width: 1024px) {
 
-} */
+@media (max-width: 1024px) {
+
+    /* config-main */
+
+    .main-container {
+        width: 55%;
+    }
+
+    .main-button {
+        font-size: 0.8em;
+    }
+
+    .main-button:hover {
+        font-size: 1em;
+    }
+
+    .main-boxbuttonstime {
+        top: 65%;
+    }
+
+    .main-config {
+        top: 76%;
+    }
+}
 
 /* responsive-tablet */
-/* @media (max-width: 638px) {
+@media (max-width: 768px) {
 
-} */
+    /* config-main */
+
+    .main-container {
+        width: 70%;
+    }
+
+    .main-boxbuttonstime {
+        width: 15%;
+    }
+
+    .main-config {
+        width: 4%;
+
+        top: 76.5%;
+        left: 78%;
+    }
+
+}
 
 /* responsive-mobile G */
-/* @media (max-width: 1024px) {
 
-} */
+@media (max-width: 425px) {
+
+    /* config-main */
+
+    .main-container {
+        width: 100%;
+        height: 65%;
+
+        border-radius: 20px;
+    }
+
+    .main-button {
+        font-size: 0.6em;
+        
+        border-radius: 5px;
+    }
+
+    .main-button:hover {
+        font-size: 0.8em;
+    }    
+
+    .main-boxtimer {
+        width: 80%;
+        height: 70%;
+    }
+
+    .main-boxbuttonstime {
+        width: 20%;
+
+        top: 58%;
+    }
+
+    .main-iconplay {
+        width: 20%;
+    }
+
+    .main-iconpause {
+        width: 20%;
+    }
+
+    .main-iconreset {
+        width: 20%;
+    }
+
+    .main-config {
+        width: 6%;
+
+        top: 65%;
+        left: 90%;
+    }
+
+}
 
 /* responsive-mobile M */
-/* @media (max-width: 1024px) {
 
-} */
+@media (max-width: 375px) {
+    
+    /* config-main */
+
+    .main-button {
+        font-size: 0.5em;
+    }
+
+    .main-button:hover {
+        font-size: 0.6em;
+    }
+
+    .main-boxtimer {
+        width: 80%;
+        height: 60%;
+    }
+
+    .main-boxbuttonstime {
+        top: 55%;
+    }
+
+    .main-iconplay {
+        width: 15%;
+        height: 30%;
+    }
+
+    .main-iconpause {
+        width: 15%;
+        height: 30%;
+    }
+
+    .main-iconreset {
+        width: 15%;
+        height: 30%;
+    }
+
+    .main-config {
+        top: 65.5%;
+    }
+}
+
+/* responsive-mobile P */
+
+@media (max-width: 320px) {
+    
+    /* config-main */
+
+    .main-container {
+        height: 50%;
+
+        border-radius: 10px;
+    }
+
+    .main-boxtimer {
+        width: 80%;
+        height: 70%;
+    }
+
+    .main-boxbuttonstime {
+        width: 20%;
+
+        top: 50%;
+    }
+
+    .main-iconplay {
+        width: 16%;
+        height: 25%;
+    }
+
+    .main-iconpause {
+        width: 16%;
+        height: 25%;
+    }
+
+    .main-iconreset {
+        width: 16%;
+        height: 25%;
+    }
+
+    .main-config {
+        width: 6%;
+
+        top: 57%;
+        left: 90%;
+    }    
+
+}

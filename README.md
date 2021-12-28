@@ -19,7 +19,7 @@ TimeNet is a very simple web application. It contains simple clock functions, as
 
 <h2  align="center">Application demo</h2>
 
-<a href="https://timenet-demo.netlify.app/"><img src="https://img.shields.io/static/v1?label=Netlify&message=Demo&color=00FA9A&style=for-the-badge&logo=NETLIFY" alt="ntShield"></a>
+<a href="https://timenet-demo.netlify.app/"><img src="https://img.shields.io/static/v1?label=Netlify&message=Demo&color=0e1e25&style=for-the-badge&logo=NETLIFY" alt="ntShield"></a>
 
 ---
 
